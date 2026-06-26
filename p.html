@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Placement Analytics</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="l.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h2>Student Placement Analytics</h2>
+
+        <label for="cgpa">CGPA:</label>
+        <input type="number" id="cgpa" step="0.1" placeholder="Enter CGPA">
+
+        <label for="skill">Skill:</label>
+        <input type="text" id="skill" placeholder="Enter Skill">
+
+        <label for="projects">Projects:</label>
+        <input type="number" id="projects" placeholder="Number of Projects">
+
+        <label for="certifications">Certifications:</label>
+        <input type="number" id="certifications" placeholder="Number of Certifications">
+
+        <label for="internships">Internships:</label>
+        <input type="number" id="internships" placeholder="Number of Internships">
+
+        <button type="button" onclick="analyzeStudent()">
+            Analyze
+        </button>
+
+        <div id="result"></div>
+        <div class="chart-container">
+            <canvas id="analysisChart"></canvas>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- JavaScript File -->
+    <script src="j.js"></script>
+
+</body>
+</html>
